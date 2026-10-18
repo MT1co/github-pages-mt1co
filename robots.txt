@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mt1.co/sitemap.xml
