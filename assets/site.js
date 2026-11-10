@@ -46,12 +46,6 @@
       runBar();setInterval(function(){if(!document.hidden)next()},6000);
     });
   }
-  // timecode embellishment
-  var tc=$('#tc');
-  if(tc&&!reduce){
-    var t0=Date.now(),p=function(n){return ('0'+n).slice(-2)};
-    setInterval(function(){var s=Math.floor((Date.now()-t0)/1000);tc.textContent=p(Math.floor(s/3600))+':'+p(Math.floor(s/60)%60)+':'+p(s%60)},1000);
-  }
 
   // gallery layout + filters
   var g=$('#gallery'),items=g?$$('.g-item',g):[];

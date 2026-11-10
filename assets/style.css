@@ -70,13 +70,6 @@ body::after{content:"";position:fixed;inset:0;z-index:90;pointer-events:none;opa
 @keyframes fill{to{transform:scaleX(1)}}
 .fade-in{opacity:0;animation:fadeUp 1s var(--ease) .5s forwards}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-/* viewfinder corners */
-.vf{position:absolute;z-index:1;width:22px;height:22px;border:1px solid rgba(239,237,231,.55);pointer-events:none;opacity:0;animation:fadeUp 1s ease .9s forwards}
-.vf.tl{top:84px;left:var(--pad);border-right:0;border-bottom:0}
-.vf.tr{top:84px;right:var(--pad);border-left:0;border-bottom:0}
-.rec{position:absolute;top:88px;left:calc(var(--pad) + 36px);display:flex;align-items:center;gap:.5rem;font:500 .68rem var(--mono);letter-spacing:.16em;color:rgba(239,237,231,.8);opacity:0;animation:fadeUp 1s ease 1s forwards}
-.rec::before{content:"";width:7px;height:7px;border-radius:50%;background:#e5484d;animation:blink 1.6s steps(2,jump-none) infinite}
-@keyframes blink{50%{opacity:.15}}
 
 /* sections */
 .section{padding:clamp(4.5rem,11vw,9rem) 0}
