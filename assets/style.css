@@ -13,7 +13,7 @@
   color-scheme:dark;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:72px}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:64px}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img,video{max-width:100%;display:block}
 a{color:inherit;text-underline-offset:.2em}
@@ -43,6 +43,7 @@ body::after{content:"";position:fixed;inset:0;z-index:90;pointer-events:none;opa
 .nav a::after{content:"";position:absolute;left:0;right:0;bottom:.2rem;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease)}
 .nav a:hover,.nav a.active{opacity:1}
 .nav a:hover::after,.nav a.active::after{transform:scaleX(1);transform-origin:left}
+@media (max-width:400px){.bar{gap:.75rem}.brand{font-size:.85rem;letter-spacing:.1em}.nav{gap:.6rem}.nav a{font-size:.7rem;letter-spacing:.04em}}
 
 /* hero */
 .hero{position:relative;height:100svh;min-height:560px;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
@@ -153,7 +154,7 @@ body::after{content:"";position:fixed;inset:0;z-index:90;pointer-events:none;opa
 .about figcaption{position:absolute;left:1rem;bottom:1rem;font:500 .66rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:rgba(239,237,231,.85)}
 .about h2{font-size:clamp(2.2rem,5vw,4.2rem);margin:1rem 0 1.6rem;line-height:1.02}
 .about h2 em{color:var(--accent)}
-.about .copy p{color:rgba(239,237,231,.78);font-size:1.05rem;max-width:56ch}
+.about .copy p:not(.label){color:rgba(239,237,231,.78);font-size:1.05rem;max-width:56ch}
 .services{list-style:none;margin:2.4rem 0 0;padding:0}
 .services li{display:grid;grid-template-columns:3rem 1fr;gap:.2rem 1rem;padding:1.15rem 0;border-top:1px solid var(--line);transition:padding-left .45s var(--ease)}
 .services li:last-child{border-bottom:1px solid var(--line)}
