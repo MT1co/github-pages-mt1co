@@ -84,10 +84,6 @@
     });
   });
 
-  // film
-  var v=$('#reel'),pb=$('#play');
-  if(v&&pb)pb.addEventListener('click',function(){pb.hidden=true;v.controls=true;v.play();v.focus()});
-
   // about image parallax
   var ai=$('#about-img');
   if(ai&&!reduce){
