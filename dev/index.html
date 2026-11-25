@@ -53,9 +53,6 @@ p{margin:0 0 1rem}
 .principles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:1.2rem 2rem}
 .principles strong{display:block;font-weight:500;font-size:1.05rem}
 .principles span{color:var(--muted);font-size:.95rem}
-dl{margin:0;display:grid;grid-template-columns:9rem 1fr}
-dt,dd{margin:0;padding:.75rem 0;border-top:1px solid var(--line)}
-dt{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding-top:.95rem}
 .contact p{font-size:1.25rem;margin-bottom:1.4rem}
 .links{list-style:none;margin:0;padding:0;display:flex;gap:.8rem;flex-wrap:wrap}
 .links a{display:inline-block;text-decoration:none;border:1px solid var(--fg);padding:.6rem 1.2rem;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;transition:background .2s,color .2s}
@@ -67,8 +64,6 @@ footer a{color:var(--muted)}
   .flow{grid-template-columns:1fr 1fr}
   .flow li:nth-child(3){border-left:0}
   .flow li:nth-child(n+3){border-top:1px solid var(--fg)}
-  dl{grid-template-columns:1fr}
-  dd{border-top:0;padding-top:0}
 }
 @media (max-width:400px){nav{gap:1rem}}
 </style>
@@ -128,16 +123,6 @@ footer a{color:var(--muted)}
       <li><strong>Keep costs non-profit sized</strong><span>Pay-per-use Google Cloud services, with spending you can see.</span></li>
       <li><strong>Leave it maintainable</strong><span>Documented, version-controlled and handed over so your team owns it.</span></li>
     </ul>
-  </section>
-
-  <section id="stack">
-    <h2>Tools</h2>
-    <dl>
-      <dt>Cloud</dt><dd>Google Cloud: BigQuery, Cloud Run, Cloud Functions, Cloud Scheduler, Cloud Storage</dd>
-      <dt>Transform</dt><dd>SQL, Dataform / dbt, Python</dd>
-      <dt>Visualize</dt><dd>Looker Studio, Google Sheets</dd>
-      <dt>Sources</dt><dd>Donor CRMs, online giving platforms, email marketing, GA4, event and ticketing tools</dd>
-    </dl>
   </section>
 
   <section id="contact" class="contact">
